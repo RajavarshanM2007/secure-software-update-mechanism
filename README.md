@@ -1,10 +1,10 @@
 # Secure Software Update Mechanism with Edge Caching & Resumable Downloads
 
-A robust Computer Networks project implementing a secure, resumable, and bandwidth-efficient software update distribution mechanism using Python, Flask, and Tkinter.
+A Computer Networks project implementing a secure, resumable, and bandwidth-efficient software update distribution mechanism using Python, Flask, and Tkinter.
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 
 Distributing large software updates reliably across distributed networks poses significant challenges:
 - High origin server bandwidth consumption.
@@ -15,7 +15,7 @@ This project addresses these challenges by implementing **Chunked Distribution w
 
 ---
 
-## 🚀 Key Highlights & Features
+## Key Highlights & Features
 
 - **Dual Distribution Modes**:
   - **Chunked Distribution via Edge Cache (Default)**: Splits files into fixed 1 MiB chunks governed by a cryptographically signed manifest.
@@ -41,7 +41,7 @@ This project addresses these challenges by implementing **Chunked Distribution w
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 ```
                       +-----------------------------+
@@ -72,7 +72,7 @@ This project addresses these challenges by implementing **Chunked Distribution w
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -95,7 +95,7 @@ This project addresses these challenges by implementing **Chunked Distribution w
 
 ---
 
-## ⚙️ Quick Start Guide
+## Quick Start Guide
 
 ### 1. Prerequisites
 - Python 3.10+ installed
@@ -104,7 +104,7 @@ This project addresses these challenges by implementing **Chunked Distribution w
 ### 2. Setup Environment & Dependencies
 ```powershell
 # Clone the repository
-git clone https://github.com/varshan1569-blip/secure-software-update-mechanism.git
+git clone https://github.com/RajavarshanM2007/secure-software-update-mechanism.git
 cd secure-software-update-mechanism
 
 # Navigate to the project root
@@ -138,7 +138,7 @@ python client.py
 
 ---
 
-## 🧪 Simulation & Automated Testing
+## Simulation & Automated Testing
 
 ### Multi-Client Performance Simulation
 Stop running server instances first, then execute:
@@ -155,6 +155,6 @@ python -m unittest tests -v
 
 ---
 
-## 🔐 Security Considerations
+## Security Considerations
 - **Manifest Authenticity**: Verified using HMAC-SHA256 (`UPDATE_SIGNING_KEY` environment variable). In production deployments, asymmetric digital signatures (RSA/ECDSA) should be utilized.
 - **Execution Safeguard**: Downloaded binaries are cryptographically validated against their target digest and are never executed directly by the updater.
